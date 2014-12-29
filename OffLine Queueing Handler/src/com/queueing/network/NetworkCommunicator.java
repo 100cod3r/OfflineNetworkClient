@@ -19,21 +19,8 @@ import com.queueing.util.Constants;
 public class NetworkCommunicator {
 
 
-	public static final String API_KEY ="AIzaSyCduFhwIh69SEu0fvOyjNCVLnl4zMxEmZ0";
-	public static final String API_SERVER_KEY ="AIzaSyDdXeUjX4osh3QM5lUXbThYsMgUoIKsUYw";
 	private static final String TAG = NetworkCommunicator.class.getName();
 
-	
-	public static HttpGet prepareRequest()
-	{
-		String googlePlaces="https://maps.googleapis.com/maps/api/place/autocomplete/json?input="
-			+ "abc"
-			+ "&types=geocode&language=en&sensor=true&key="
-			+ API_SERVER_KEY;
-
-		return new HttpGet(googlePlaces);
-	
-	}
 	
     public static HttpResponse dispatchRequest(HttpRequestBase httpRequest)
     {
